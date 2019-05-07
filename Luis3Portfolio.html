@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Luis Portfolio Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Luis2Portfolio Styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_container">
+
+        <div class="header_logo">
+          <img src="img/logo.png" alt="logoImage" class="logo_img"/>
+        </div>
+
+        <div class="header_text">
+          <h1 class="header_text_name">Luis Toro</h1> <!-- put T in red -->
+          <p class="header_text_title">Junior Front-End Web Developer Student</p>
+        </div>
+
+      </div>
+    </header>
+    <!-- READ: I need to organise (structure) the followings lines -->
+    <!-- here when using "target= blank" it opens a new window tab  -->
+    <nav class="home_tab"><a href="HOME.com" target="_blank">HOme</a></nav>
+    <nav class="tweeter_tab"><a href="tweeter.com" target="_blank">TWEeter</a></nav>
+    <!-- here opens email software -->
+    <a href="mailto:luis@hotmail.com">Email Luis</a>
+    <br>
+    <!-- here goes to photoshop section (photoshop must have ID in orther to work) -->
+    <a href="#photoshop">photoshop</a>
+    <br>
+    <!-- here i inserted a googles map frame (I need to find if I can change the url address
+      for a different location)-->
+    <iframe src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed" 
+      width="800"
+      height="350"
+      frameborder="0">
+    </iframe>
+
+    <main>
+      <p class="main_text"> This text is just for this excercise but in the future it will be a real content.
+        This text is just for this excercise but in the future it will be a real content.
+        This text is just for this excercise but in the future it will be a real content.
+        This text is just for this excercise but in the future it will be a real content.
+        This text is just for this excercise but in the future it will be a real content.
+      </p>
+      <!-- here "hr" is the line after the pharahraph -->
+      <hr>
+      <div class="hero_container">
+        <!-- here tabindex makes image to be recognised when using 'tab' on keyboard -->
+        <!-- here i used 'title' so when image is hover, description is shown-->
+        <img src="img/all1.jpg" tabindex="0" alt="heroImage" class="hero_img" title="all project inventory and analysis">
+        <figcaption>image of the entire project</figcaption>
+      </div>
+
+      <section Class="skills">
+        <h2 Class="skills_main_name">Skills</h2>
+
+        <div class="skills container">
+          <img src="https://www.planit-ie.com/wp-content/uploads/2016/09/4-Urban-Sketching-e1476440389439.jpg" alt="sketch" class="skills_img sketching_img">
+          <h3 class="skills_name sketching_name">Sketching</h3>
+          <p class="skills_text sketching_text">To see where this image was taken from <a href="https://www.planit-ie.com/wp-content/uploads/2016/09/4-Urban-Sketching-e1476440389439.jpg">click here.</a></p>
+          <p class="skills_text sketching_text">This text is just for this excercise but in the future it will be a real content.
+            This text is just for this excercise but in the future it will be a real content.
+            This text is just for this excercise but in the future it will be a real content.
+          </p>
+        </div>
+
+        <div class="skills container">
+          <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112955802/original/46cf0371b383acd5e97a8f375ac6f297fe88c18a/design-auto-cad-2d-floor-plan-very-fast.jpg" alt="autocad" class="skills_img autocad_img">
+          <h3 class="skills_name autocad_name">Autocad</h3>
+          <p class="skills_text autocad_text">To see where this image was taken from <a href="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112955802/original/46cf0371b383acd5e97a8f375ac6f297fe88c18a/design-auto-cad-2d-floor-plan-very-fast.jpg">click here</a></p>
+          <p class="skills_text autocad_text">This text is just for this excercise but in the future it will be a real content.
+            This text is just for this excercise but in the future it will be a real content.
+            This text is just for this excercise but in the future it will be a real content.
+          </p>
+        </div>
+
+        <div class="skills container">
+          <img src="https://sg.fiverrcdn.com/photo2s/99837787/original/d92923692cacbeabd51986ef74fa6180fc1498a2.jpg?1532626534" alt="photoshop" class="skills_img photoshop_img">
+          <h3 id="photoshop" class="skills_name photoshop_name">Photoshop</h3>
+          <p class="skills_text photoshop_text" >To see where this image was taken from <a href="https://sg.fiverrcdn.com/photo2s/99837787/original/d92923692cacbeabd51986ef74fa6180fc1498a2.jpg?1532626534">click here</a></p>
+          <p class="skills_text photoshop_text">This text is just for this excercise but in the future it will be a real content.
+            This text is just for this excercise but in the future it will be a real content.
+            This text is just for this excercise but in the future it will be a real content.
+          </p>
+        </div>
+
+      </section>
+      <!-- start of form1 -->
+      <!-- here we setup a form.  GET and POST are different -->
+      <form action="http://www.example.com/suscribe.php" method="GET">
+        <p>This is where the form controls will appear</p>      
+      </form>
+      <form action="http://www.example.com/login.php">
+        <p>Username:
+          <input type="text" name="username">
+        </p>
+        <p>Password:
+          <input type="password" name="password">
+        </p>
+      </form>
+      <!-- end of form1 -->
+
+      <!-- start of form2 -->
+      <form action="http://www.example.com/comments.php">
+        <p>what did you think of this gig</p>
+        <textarea name="comments" id="comments-box" cols="30" rows="10">
+          enter your comments. . .
+        </textarea>
+      </form>
+      <!-- end of form2 -->
+
+      
+      <footer>
+        <ul>
+          <li>ç Copy Rights</li>
+          <li>Contac</li>
+
+        </ul>
+
+      </footer>
+    </main>
+
+  </body>
+</html>

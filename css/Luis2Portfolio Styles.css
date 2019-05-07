@@ -1,0 +1,135 @@
+
+/* ---Headaer Block--- */
+
+  .header_container {
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+  background-color: #dcd9d9;
+  margin-bottom: 20px;
+}
+
+.logo_img {
+  max-width: 80px;
+}
+
+.header_text_name {
+  font-family: Arial;
+  color: white;
+  text-align: right;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.header_text_title {
+  color: grey;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+/* --- Hero and Main paragraph --- */
+
+.main_text {
+  font-family: Arial;
+  text-align: justify;
+  width: 100%;
+  color: #a5a5a5;
+}
+
+.hero_img {
+  display: flex;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+
+/* --- Section --- */
+
+/* .container {
+  display: flex;
+} */
+
+.skills_img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.skills_main_name {
+  max-width: 80%;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  background-color: #dcd9d9;
+  border-radius: 10px;
+}
+
+.skills_name {
+  max-width: 80%;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #dcd9d9;
+  border-radius: 10px;
+}
+
+.skills_text {
+  font-family: Arial;
+  text-align: justify;
+  color: #a5a5a5;
+}
+
+@media screen and (min-width: 300px) {
+  .skills_img {
+    /* float: left; */
+    display: flex;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .main_text, .skills_main_name, .skills_name, .skills_text {
+    /* float: left; */
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .sketching_img, .sketching_text, .sketching_name,
+  .photoshop_img, .photoshop_text, .photoshop_name {
+
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    margin-left: 0px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .autocad_img, .autocad_text, .autocad_name {
+
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header_container {
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
