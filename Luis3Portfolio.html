@@ -5,6 +5,9 @@
     <title>Luis Portfolio Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/Luis2Portfolio Styles.css">
+    <!-- here is the link to be able to use icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -21,8 +24,8 @@
 
       </div>
     </header>
-   
- <nav class="navigation_tab">
+
+    <nav class="navigation_tab">
       <ul>
         <!-- here when using "target= blank" it opens a new window tab  -->
         <li class="home_tab"><a href="HOME.com" target="_blank">Home</a></li>
@@ -32,37 +35,40 @@
         <li class="contact_tab"><a href="mailto:luis@hotmail.com">Contacts</a></li>
       </ul>
     </nav>
-
-    <!-- READ: I need to organise (structure) the followings lines -->
-    <!-- here when using "target= blank" it opens a new window tab  -->
+    
     <br>
-    <!-- here goes to photoshop section (photoshop must have ID in orther to work) -->
-    <a href="#photoshop">photoshop</a>
+    <!-- here screen readers can skip the map and go to "h2" directly. ("href" must have and match ID in orther to work) -->
+    <a href="#skills_main_name">skip map</a>
     <br>
     <!-- here i inserted a googles map frame (I need to find if I can change the url address
       for a different location)-->
-    <iframe src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed" 
-      frameborder="0">
-    </iframe>
-    
-    <main>
-      <p class="main_text"> This text is just for this excercise but in the future it will be a real content.
-        This text is just for this excercise but in the future it will be a real content.
-        This text is just for this excercise but in the future it will be a real content.
-        This text is just for this excercise but in the future it will be a real content.
-        This text is just for this excercise but in the future it will be a real content.
-      </p>
-      <!-- here "hr" is the line after the pharahraph -->
-      <hr>
-      <div class="hero_container">
-        <!-- here tabindex makes image to be recognised when using 'tab' on keyboard -->
-        <!-- here i used 'title' so when image is hover, description is shown-->
-        <img src="img/all1.jpg" tabindex="0" alt="heroImage" class="hero_img" title="all project inventory and analysis">
-        <figcaption>image of the entire project</figcaption>
-      </div>
+    <div class="google_map">
+      <iframe src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed" 
+      frameborder="1">
+      </iframe>
+    </div>
 
+    <main>
+      
       <section Class="skills">
-        <h2 Class="skills_main_name">Skills</h2>
+        <h2 id="skills_main_name">Skills</h2>
+      
+        <p class="main_text"> This text is just for this excercise but in the future it will be a real content.
+          This text is just for this excercise but in the future it will be a real content.
+          This text is just for this excercise but in the future it will be a real content.
+          This text is just for this excercise but in the future it will be a real content.
+          This text is just for this excercise but in the future it will be a real content.
+        </p>
+        <!-- here "hr" is the line after the pharahraph -->
+        <hr>
+        <div class="hero_container">
+          <!-- here tabindex makes image to be recognised when using 'tab' on keyboard -->
+          <!-- here i used 'title' so when image is hover, description is shown-->
+          <img src="img/all1.jpg" tabindex="0" alt="heroImage" class="hero_img" title="all project inventory and analysis">
+          <figcaption>image of the entire project</figcaption>
+        </div>
+
+      
 
         <div class="skills container">
           <h3 class="skills_name sketching_name">Sketching</h3>
@@ -123,7 +129,13 @@
       <footer>
         <ul>
           <li>ç Copy Rights</li>
-          <li>Contac</li>
+          <li>twetter</li>
+          <button>
+            <i class="material-icons">thumb_up</i>
+          </button>
+          <button>
+              <i class="material-icons">mail_outline</i>
+          </button>
 
         </ul>
 
